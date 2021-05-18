@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>Code</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar areas -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo"> <i class="fas fa-chess-king"></i>Logo</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">
+                    Home
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/about.html" class="navbar__links">
+                    About
+                    </a>
+                </li>
+                <li class="navbar__item">
+                    <a href="code.html" class="navbar__links">
+                    Code
+                    </a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">
+                    Log in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- show text section -->
+
+    <div class="code__desc">
+        <div class="code__desc--container">
+            <div class="code__desc--content">
+                <p>This will show snippets of the code used. As well as links to Github for the course code</p>
+            </div>
+            <div class="text__box">
+                <textarea rows="5" cols="20">
+                    <!-- HTML CODE
+
+                        <div class="navbar__container">
+                        <a href="/" id="navbar__logo"> <i class="fas fa-chess-king"></i>Logo</a>
+                        <div class="navbar__toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="navbar__menu">
+                            <li class="navbar__item">
+                                <a href="/" class="navbar__links">
+                                Home
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="/about.html" class="navbar__links">
+                                About
+                                </a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="code.html" class="navbar__links">
+                                Code
+                                </a>
+                            </li>
+                            <li class="navbar__btn">
+                                <a href="/" class="button">
+                                Log in
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+    </textarea>
+
+                <div class="text__box">
+                    <textarea rows="5" cols="20"> 
+                        CSS CODE
+                        .navbar {
+                            background: #f9a826;
+                            height: 80px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 18px;
+                            position: sticky;
+                            top: 0;
+                            z-index: 999;
+                        }
+
+        </textarea>
+
+                    <div class="text__box">
+                        <textarea rows="5" cols="20"> 
+                JS CODE 
+                const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar__menu');
+
+
+menu.addEventListener('click', function() {
+    menu.classList.toggle('is-active');
+    menuLinks.classList.toggle('active');
+});
+            </textarea>
+
+                        <div class="final__words">
+                            <p>Click
+                                <a href="https://www.youtube.com/">HERE</a> to view all my source code on Github</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <div class="footer__container">
+            <div class="footer__links">
+                <div class="footer__link--wrapper">
+                    <div class="footer__link--items">
+                        <h2>About me</h2>
+                        <a href="/">Placeholder</a>
+                        <a href="/">Placeholder</a>
+                        <a href="/">Placeholder</a>
+                        <a href="/">Placeholder</a>
+                        <a href="/">Placeholder</a>
+                    </div>
+                    <div class="footer__link--items">
+                        <h2>Contact Me</h2>
+                        <a href="/">Phone</a>
+                        <a href="/">Email</a>
+                    </div>
+                </div>
+            </div>
+            <div class="social__media">
+                <div class="social__media--wrapper">
+                    <div class="footer__logo">
+                        <a href="/" id="footer__logo"><i class="fas fa-chess-king"></i>Logo</a>
+                    </div>
+                    <p class="website__rights">© Me 2021. All rights reserved</p>
+                    <div class="social__icons">
+                        <a href="https://twitter.com/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="/" class="social__icon--link" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>
